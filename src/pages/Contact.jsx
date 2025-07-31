@@ -5,7 +5,7 @@ import rigoImageUrl from "../assets/img/rigo-baby.jpg"  // Import an image asset
 import useGlobalReducer from "../hooks/useGlobalReducer";  // Import a custom hook for accessing the global state
 
 // Define and export the Single component which displays individual item details.
-export const Single = props => {
+export const Contact = props => {
   // Access the global state using the custom hook.
   const { store } = useGlobalReducer()
 
@@ -30,7 +30,7 @@ export const Single = props => {
 };
 
 // Use PropTypes to validate the props passed to this component, ensuring reliable behavior.
-Single.propTypes = {
+Contact.propTypes = {
   // Although 'match' prop is defined here, it is not used in the component.
   // Consider removing or using it as needed.
   match: PropTypes.object
